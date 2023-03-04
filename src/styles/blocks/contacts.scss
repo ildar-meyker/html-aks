@@ -1,25 +1,23 @@
 .contacts {
-    position: relative;
-    z-index: 10;
-    background: #fff;
-    padding-top: 12.6rem;
-    padding-bottom: 15.3rem;
+    padding-top: 9.9rem;
+    padding-bottom: 11.4rem;
+    background: linear-gradient(90deg, #000000 0%, #434343 100%);
 
     &__desc {
-        margin-top: 4.9rem;
-        font-size: 2.5rem;
-        line-height: 1.52;
+        font-weight: 600;
+        font-size: 2rem;
+        line-height: 1.6;
         text-align: center;
+        color: #ffffff;
     }
 }
 
 @media (max-width: 999.98px) {
     .contacts {
-        padding: 5rem 0;
+    }
+}
 
-        &__desc {
-            margin-top: 0;
-            font-size: 1.5rem;
-        }
+@media (max-width: 499.98px) {
+    .contacts {
     }
 }

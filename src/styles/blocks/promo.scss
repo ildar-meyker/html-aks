@@ -1,88 +1,12 @@
 .promo {
-    position: relative;
-    padding-bottom: 20rem;
-    padding-top: 22rem;
-    text-align: center;
-
-    &__image {
-        @include fill;
-        background: url(../img/promo/1.jpeg) no-repeat 100% 100% / auto 100%;
-    }
-
-    &__body {
-        position: relative;
-    }
-
-    &__header {
-    }
-
-    &__logo {
-        position: relative;
-        width: 54.6rem;
-        display: block;
-        margin: 0 auto;
-
-        &:before {
-            content: " ";
-            padding-top: calc(124 / 546 * 100%);
-            display: block;
-        }
-
-        img {
-            @include fill;
-            object-fit: cover;
-        }
-    }
-
-    &__desc {
-        margin-top: 12rem;
-    }
 }
 
 @media (max-width: 999.98px) {
     .promo {
-        padding-top: 18.5rem;
-        padding-bottom: 24.3rem;
-
-        &__image {
-            transform: translateX(11rem);
-            background-size: auto 95%;
-        }
-
-        &__logo {
-            max-width: 26rem;
-        }
-
-        &__desc {
-            margin-top: 2.5rem;
-        }
     }
 }
 
 @media (max-width: 499.98px) {
     .promo {
-        height: calc(100vh - 4.8rem);
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        &__image {
-            transform: none;
-            background-position: 75% 100%;
-        }
-
-        &__body {
-            transform: translateY(-4vh);
-        }
-    }
-}
-
-@media (max-width: 359.98px) {
-    .promo {
-        &__logo {
-            width: 22rem;
-        }
     }
 }

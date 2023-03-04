@@ -15,62 +15,13 @@
     }
 
     &__h1 {
-        margin-bottom: calc(38 / 42) + em;
-        font-family: "Arial Black";
-        font-weight: 900;
-        font-size: 4.2rem;
-        line-height: calc(52 / 42);
-        color: #fe9149;
-    }
-
-    &__angle {
-        position: absolute;
-        bottom: -1px;
-        left: 0;
-        width: 100%;
-        height: 11.5rem;
-        background: url(../img/angle.svg) no-repeat 50% 100% / auto 100%;
-
-        &--top {
-            transform: scaleY(-1);
-            top: -1px;
-            bottom: auto;
-        }
-    }
-
-    &__wing {
-        height: 25rem;
-        background: #fff;
-        position: absolute;
-        width: 200rem;
-
-        &--b-right {
-            top: 100%;
-            left: 50%;
-            transform: skew(0deg, -9deg);
-            transform-origin: 0 0;
-        }
-
-        &--b-left {
-            top: 100%;
-            right: 50%;
-            transform: skew(0deg, 9deg);
-            transform-origin: 100% 0;
-        }
-
-        &--t-right {
-            bottom: 100%;
-            left: 50%;
-            transform: skew(0deg, 9deg);
-            transform-origin: 0 0;
-        }
-
-        &--t-left {
-            bottom: 100%;
-            right: 50%;
-            transform: skew(0deg, -9deg);
-            transform-origin: 100% 0;
-        }
+        margin-bottom: calc(40 / 35) + em;
+        font-weight: 800;
+        font-size: 3.5rem;
+        line-height: 1.363;
+        background: linear-gradient(90deg, #ea5b0d 0%, #f37335 100%);
+        @include text-gradient;
+        text-align: center;
     }
 }
 
@@ -78,23 +29,6 @@
     .page {
         &__center {
             max-width: 600px;
-        }
-
-        &__h1 {
-            margin-bottom: calc(20 / 30) + em;
-            font-size: 3rem;
-        }
-
-        &__wing {
-            &--b-right,
-            &--t-left {
-                transform: skew(0deg, -7deg);
-            }
-
-            &--b-left,
-            &--t-right {
-                transform: skew(0deg, 7deg);
-            }
         }
     }
 }

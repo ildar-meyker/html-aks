@@ -1,72 +1,22 @@
 .goods {
-    position: relative;
-    z-index: 10;
-    padding-bottom: 13.8rem;
-    padding-top: 2.5rem;
-
     &__row {
         display: flex;
-        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
-    &__left,
-    &__right {
+    &__col {
         flex: 0 0 auto;
-        width: 50%;
-    }
-
-    &__left {
-        padding-right: 3rem;
-    }
-
-    &__right {
-        padding-left: 2.3rem;
-    }
-
-    &__image {
-        margin-left: -11.3rem;
-    }
-
-    &__desc {
-        padding-top: 1.6rem;
+        width: 33.33%;
     }
 }
 
 @media (max-width: 999.98px) {
     .goods {
-        padding-top: 2.8rem;
-        padding-bottom: 4rem;
-
-        &__row {
-            flex-wrap: wrap;
-        }
-
-        &__left,
-        &__right {
-            width: 100%;
-            padding: 0;
-        }
-
-        &__left {
-            order: 2;
-        }
-
-        &__right {
-            order: 1;
-            padding-left: 2rem;
-        }
-
-        &__image {
-            margin: 0;
-        }
     }
 }
 
 @media (max-width: 499.98px) {
     .goods {
-        &__image {
-            margin-left: -14vw;
-            margin-right: -6vw;
-        }
     }
 }

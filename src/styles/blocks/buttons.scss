@@ -45,27 +45,6 @@
     }
 }
 
-.btn-black {
-    @include reset-btn;
-    min-width: calc(250 / 20) + em;
-    background: linear-gradient(90deg, #000000, transparent) #434343;
-    background-size: 100% 100%;
-    padding: 0 calc(30 / 20) + em;
-    padding-bottom: calc(18 / 20) + em;
-    padding-top: calc(14 / 20) + em;
-    font-family: "Arial Black";
-    font-weight: 900;
-    font-size: 2rem;
-    line-height: calc(28 / 20);
-    text-align: center;
-    letter-spacing: 0.085em;
-    color: #ffffff;
-
-    &:hover {
-        background: #f37335;
-    }
-}
-
 .btn-arrow {
     @include reset-btn;
     display: inline-flex;
@@ -88,7 +67,7 @@
 }
 
 @media (max-width: 999.98px) {
-    .btn-black {
-        font-size: 1.5rem;
-    }
+}
+
+@media (max-width: 499.98px) {
 }

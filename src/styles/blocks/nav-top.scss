@@ -1,28 +1,12 @@
 .nav-top {
-    ul {
-        display: flex;
-    }
-
-    li {
-        margin: 0 6rem;
-    }
-
-    a {
-        font-family: "Arial Black";
-        font-weight: 900;
-        font-size: 2rem;
-        line-height: calc(28 / 20);
-        color: #ffffff;
-
-        &.active,
-        &:hover {
-            color: #fe9149;
-        }
-    }
 }
 
 @media (max-width: 999.98px) {
     .nav-top {
-        display: none;
+    }
+}
+
+@media (max-width: 499.98px) {
+    .nav-top {
     }
 }

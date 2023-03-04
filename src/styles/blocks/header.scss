@@ -1,47 +1,12 @@
 .header {
-    position: fixed;
-    z-index: 2000;
-    width: 100%;
-    top: 0;
-    background: linear-gradient(90deg, #000000 0%, #434343 100%);
-
-    &__center {
-        @extend .page__center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 7.6rem;
-    }
-
-    &__buffer {
-        height: 7.6rem;
-    }
-
-    &__btn-burger {
-        display: none;
-        position: relative;
-        z-index: 2000;
-    }
 }
 
 @media (max-width: 999.98px) {
     .header {
-        background: #1a1b1f;
+    }
+}
 
-        &__center {
-            padding: 0 2rem;
-            max-width: none;
-            height: 4.8rem;
-        }
-
-        &__buffer {
-            height: 4.8rem;
-        }
-
-        &__btn-burger {
-            display: block;
-            margin-left: auto;
-            margin-right: -1rem;
-        }
+@media (max-width: 499.98px) {
+    .header {
     }
 }
