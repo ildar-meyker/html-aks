@@ -1,4 +1,24 @@
 .header {
+    transition: all 0.2s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding-top: 4.5rem;
+
+    &.fixed {
+        background: rgba(#000, 0.8);
+        padding: 2rem 0;
+    }
+
+    &__center {
+        @extend .page__center;
+    }
+
+    &__btn-burger {
+        display: none;
+    }
 }
 
 @media (max-width: 999.98px) {

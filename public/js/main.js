@@ -1,6 +1,20 @@
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/js/modules/fixedHeader.js":
+/*!***************************************!*\
+  !*** ./src/js/modules/fixedHeader.js ***!
+  \***************************************/
+/***/ (function() {
+
+$(function () {
+  $(window).on("scroll", function () {
+    $("#header").toggleClass("fixed", $(window).scrollTop() > 200);
+  });
+});
+
+/***/ }),
+
 /***/ "./src/js/modules/navMobile.js":
 /*!*************************************!*\
   !*** ./src/js/modules/navMobile.js ***!
@@ -56,10 +70,9 @@ $(function () {
 var changeNav = function changeNav(entries, observer) {
   entries.forEach(function (entry) {
     // get id of the intersecting section
-    var id = entry.target.getAttribute("id");
-    var ratio = id === "goods" ? 0.01 : 0.55; // verify the element is intersecting
+    var id = entry.target.getAttribute("id"); // verify the element is intersecting
 
-    if (entry.isIntersecting && entry.intersectionRatio >= ratio) {
+    if (entry.isIntersecting && entry.intersectionRatio >= 0.55) {
       // remove old active class
       Array.from(document.querySelectorAll(".js-scroll-nav .active")).forEach(function (el) {
         el.classList.remove("active");
@@ -164,6 +177,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_navMobile__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/navMobile */ "./src/js/modules/navMobile.js");
 /* harmony import */ var _modules_scrollNav__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/scrollNav */ "./src/js/modules/scrollNav.js");
 /* harmony import */ var _modules_scrollNav__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_scrollNav__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _modules_fixedHeader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/fixedHeader */ "./src/js/modules/fixedHeader.js");
+/* harmony import */ var _modules_fixedHeader__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_modules_fixedHeader__WEBPACK_IMPORTED_MODULE_2__);
+
 
 
 }();
