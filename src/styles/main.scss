@@ -1,0 +1,64 @@
+@import "./helpers/mixins.scss";
+@import "./helpers/helpers.scss";
+
+:root {
+    --side-padding: 12rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: clamp(7px, 0.7vw, 10px);
+}
+
+body {
+    text-size-adjust: none;
+    min-width: 320px;
+    background: #fff;
+    font-family: "Arial", sans-serif;
+    color: #000;
+}
+
+img {
+    max-width: 100%;
+}
+
+img[data-src] {
+    visibility: hidden;
+}
+
+a,
+button {
+    transition: all 0.2s;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+@import "./blocks/buttons.scss";
+@import "./blocks/inputs.scss";
+@import "./blocks/page.scss";
+@import "./blocks/goods.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/finance.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/header.scss";
+@import "./blocks/nav-top.scss";
+@import "./blocks/nav-mobile.scss";
+@import "./blocks/about.scss";
+@import "./blocks/article.scss";
+@import "./blocks/promo.scss";
+
+@media (max-width: 999.98px) {
+    :root {
+        --side-padding: 2rem;
+    }
+
+    html {
+        font-size: 10px;
+    }
+}

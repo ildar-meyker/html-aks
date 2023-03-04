@@ -1,0 +1,20 @@
+.footer {
+    position: relative;
+    overflow: hidden;
+    padding-top: 13.1rem;
+    padding-bottom: 5.7rem;
+    background: linear-gradient(90deg, #000000 0%, #434343 100%);
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: calc(23 / 20);
+    text-align: center;
+    color: #ffffff;
+}
+
+@media (max-width: 999.98px) {
+    .footer {
+        padding-top: 4.5rem;
+        padding-bottom: 3.2rem;
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,25 @@
+.article {
+    font-size: 2rem;
+    line-height: 1.4;
+
+    ul {
+        list-style: outside disc;
+        padding-left: 3rem;
+
+        li {
+            margin: calc(23 / 20) + em 0;
+
+            @include reset-margins;
+        }
+    }
+}
+
+@media (max-width: 999.98px) {
+    .article {
+        font-size: 1.5rem;
+
+        ul {
+            padding-left: 0;
+        }
+    }
+}
