@@ -525,10 +525,7 @@ a {
 
 @media (max-width: 999.98px) {
   .header {
-    padding: 1rem 0;
-  }
-  .header.fixed {
-    padding: 1rem 0;
+    padding: 0 !important;
   }
   .header__center {
     max-width: none;

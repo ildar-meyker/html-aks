@@ -28,11 +28,7 @@
 
 @media (max-width: 999.98px) {
     .header {
-        padding: 1rem 0;
-
-        &.fixed {
-            padding: 1rem 0;
-        }
+        padding: 0 !important;
 
         &__center {
             max-width: none;
