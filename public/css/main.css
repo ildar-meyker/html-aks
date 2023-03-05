@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Mont";
-  src: url("../fonts/Mont/Mont Regular.eot");
-  src: local("Mont-Regular"), local(Mont Regular), url("../fonts/Mont/Mont Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Mont/Mont Regular.woff2") format("woff2"), url("../fonts/Mont/Mont Regular.woff") format("woff"), url("../fonts/Mont/Mont Regular.svg#Mont Regular") format("svg");
+  src: url("../fonts/Mont/Mont_Regular.eot");
+  src: local("Mont-Regular"), local(Mont Regular), url("../fonts/Mont/Mont_Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Mont/Mont_Regular.woff2") format("woff2"), url("../fonts/Mont/Mont_Regular.woff") format("woff"), url("../fonts/Mont/Mont_Regular.svg#Mont Regular") format("svg");
   font-weight: 400;
   font-style: normal;
   font-stretch: normal;
@@ -9,8 +9,8 @@
 }
 @font-face {
   font-family: "Mont";
-  src: url("../fonts/Mont/Mont SemiBold.eot");
-  src: local("Mont-SemiBold"), local(Mont SemiBold), url("../fonts/Mont/Mont SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Mont/Mont SemiBold.woff2") format("woff2"), url("../fonts/Mont/Mont SemiBold.woff") format("woff"), url("../fonts/Mont/Mont SemiBold.svg#Mont SemiBold") format("svg");
+  src: url("../fonts/Mont/Mont_SemiBold.eot");
+  src: local("Mont-SemiBold"), local(Mont SemiBold), url("../fonts/Mont/Mont_SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Mont/Mont_SemiBold.woff2") format("woff2"), url("../fonts/Mont/Mont_SemiBold.woff") format("woff"), url("../fonts/Mont/Mont_SemiBold.svg#Mont SemiBold") format("svg");
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;
@@ -18,8 +18,8 @@
 }
 @font-face {
   font-family: "Mont";
-  src: url("../fonts/Mont/Mont Bold.eot");
-  src: local("Mont-Bold"), local(Mont Bold), url("../fonts/Mont/Mont Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Mont/Mont Bold.woff2") format("woff2"), url("../fonts/Mont/Mont Bold.woff") format("woff"), url("../fonts/Mont/Mont Bold.svg#Mont Bold") format("svg");
+  src: url("../fonts/Mont/Mont_Bold.eot");
+  src: local("Mont-Bold"), local(Mont Bold), url("../fonts/Mont/Mont_Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Mont/Mont_Bold.woff2") format("woff2"), url("../fonts/Mont/Mont_Bold.woff") format("woff"), url("../fonts/Mont/Mont_Bold.svg#Mont Bold") format("svg");
   font-weight: 700;
   font-style: normal;
   font-stretch: normal;
@@ -27,8 +27,8 @@
 }
 @font-face {
   font-family: "Mont";
-  src: url("../fonts/Mont/Mont Heavy.eot");
-  src: local("Mont-Heavy"), local(Mont Heavy), url("../fonts/Mont/Mont Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/Mont/Mont Heavy.woff2") format("woff2"), url("../fonts/Mont/Mont Heavy.woff") format("woff"), url("../fonts/Mont/Mont Heavy.svg#Mont Heavy") format("svg");
+  src: url("../fonts/Mont/Mont_Heavy.eot");
+  src: local("Mont-Heavy"), local(Mont Heavy), url("../fonts/Mont/Mont_Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/Mont/Mont_Heavy.woff2") format("woff2"), url("../fonts/Mont/Mont_Heavy.woff") format("woff"), url("../fonts/Mont/Mont_Heavy.svg#Mont Heavy") format("svg");
   font-weight: 800;
   font-style: normal;
   font-stretch: normal;
@@ -36,8 +36,8 @@
 }
 @font-face {
   font-family: "Mont";
-  src: url("../fonts/Mont/Mont Black.eot");
-  src: local("Mont-Black"), local(Mont Black), url("../fonts/Mont/Mont Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Mont/Mont Black.woff2") format("woff2"), url("../fonts/Mont/Mont Black.woff") format("woff"), url("../fonts/Mont/Mont Black.svg#Mont Black") format("svg");
+  src: url("../fonts/Mont/Mont_Black.eot");
+  src: local("Mont-Black"), local(Mont Black), url("../fonts/Mont/Mont_Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Mont/Mont_Black.woff2") format("woff2"), url("../fonts/Mont/Mont_Black.woff") format("woff"), url("../fonts/Mont/Mont_Black.svg#Mont Black") format("svg");
   font-weight: 900;
   font-style: normal;
   font-stretch: normal;
