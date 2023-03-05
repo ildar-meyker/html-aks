@@ -94,3 +94,15 @@
         object-fit: contain;
     }
 }
+
+@media (min-width: 1000px) {
+    .d-lg-none {
+        display: none;
+    }
+}
+
+@media (max-width: 999.98px) {
+    .d-sm-none {
+        display: none;
+    }
+}

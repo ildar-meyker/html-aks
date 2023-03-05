@@ -132,6 +132,16 @@
      object-fit: contain;
 }
 
+@media (min-width: 1000px) {
+  .d-lg-none {
+    display: none;
+  }
+}
+@media (max-width: 999.98px) {
+  .d-sm-none {
+    display: none;
+  }
+}
 :root {
   --side-padding: 12rem;
 }
@@ -662,6 +672,14 @@ a {
   }
   .promo__btn-price {
     margin-top: 5rem;
+  }
+}
+@media (max-width: 999.98px) {
+  .products {
+    padding: 6.5rem 0;
+  }
+  .products__image {
+    margin: 0 -3vw;
   }
 }
 @media (max-width: 999.98px) {

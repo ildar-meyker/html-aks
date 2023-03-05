@@ -1,0 +1,15 @@
+.products {
+}
+
+@media (max-width: 999.98px) {
+    .products {
+        padding: 6.5rem 0;
+
+        &__image {
+            margin: 0 -3vw;
+        }
+    }
+}
+
+@media (max-width: 499.98px) {
+}
