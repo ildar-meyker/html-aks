@@ -205,6 +205,9 @@ a {
 .btn-burger i:nth-child(3) {
   transform: translateY(0.7rem);
 }
+.btn-burger.active i {
+  background: #ea5b0d;
+}
 .btn-burger.active i:nth-child(1) {
   transform: rotate(45deg);
 }
@@ -222,14 +225,13 @@ a {
   border: 0;
   cursor: pointer;
   display: inline-flex;
-  padding: 0.2rem 0.9rem;
+  padding: 0.2rem 1.5rem;
   border: 2px solid #f37335;
   align-items: center;
   font-family: inherit;
   font-weight: 800;
   font-size: 1.6rem;
   line-height: 1.5;
-  color: #f37335;
 }
 .btn-arrow .icon {
   margin-left: 0.7142857143em;
@@ -245,11 +247,11 @@ a {
   background: none;
   border: 0;
   cursor: pointer;
-  min-width: 20.5rem;
+  min-width: 10.25em;
   border: 0.3rem solid #ffffff;
   box-shadow: 0px 0px 0.2rem rgba(0, 0, 0, 0.3);
-  border-radius: 1rem;
-  padding: 1.7rem 1rem;
+  border-radius: 0.5em;
+  padding: 0.7em 0.5em;
   font-family: inherit;
   font-style: normal;
   font-weight: 700;
@@ -264,6 +266,13 @@ a {
   color: #000;
 }
 
+@media (max-width: 999.98px) {
+  .btn-white {
+    min-width: 8.6666666667em;
+    padding: 0.4666666667em 0.6666666667em;
+    font-size: 1.5rem;
+  }
+}
 .page__wrapper {
   overflow: hidden;
 }
@@ -292,6 +301,12 @@ a {
 @media (max-width: 999.98px) {
   .page__center, .header__center {
     max-width: 600px;
+  }
+  .page__h1 {
+    margin-bottom: 0.32em;
+    font-weight: 900;
+    font-size: 2.5rem;
+    line-height: 1.2;
   }
 }
 .goods {
@@ -342,7 +357,35 @@ a {
   line-height: 1.3333333333;
   text-align: center;
 }
+.goods__article {
+  display: none;
+}
 
+@media (max-width: 999.98px) {
+  .goods {
+    padding-top: 3rem;
+    padding-bottom: 4.5rem;
+  }
+  .goods__list {
+    max-width: 28rem;
+  }
+  .goods__row {
+    margin-top: -4.2rem;
+  }
+  .goods__col {
+    width: 100%;
+    margin-top: 4.2rem;
+  }
+  .goods__h1 {
+    text-align: left;
+    padding: 0 1.2rem;
+  }
+  .goods__article {
+    display: block;
+    margin-bottom: 5.2rem;
+    padding: 0 1.2rem;
+  }
+}
 .contacts {
   padding-top: 9.9rem;
   padding-bottom: 11.4rem;
@@ -409,17 +452,38 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 2000;
   padding-top: 4.5rem;
 }
 .header.fixed {
   background: rgba(0, 0, 0, 0.8);
   padding: 2rem 0;
 }
+.header--no-bg {
+  transition: none;
+  background: transparent !important;
+}
 .header__btn-burger {
   display: none;
 }
 
+@media (max-width: 999.98px) {
+  .header {
+    padding: 1rem 0;
+  }
+  .header.fixed {
+    padding: 1rem 0;
+  }
+  .header__center {
+    max-width: none;
+    display: flex;
+  }
+  .header__btn-burger {
+    display: block;
+    margin-left: auto;
+    margin-right: -1rem;
+  }
+}
 .nav-top ul {
   display: flex;
   justify-content: space-between;
@@ -439,15 +503,21 @@ a {
   color: #eb6608;
 }
 
+@media (max-width: 999.98px) {
+  .nav-top {
+    display: none;
+  }
+}
 .nav-mobile {
   transition: all 0.2s;
   position: fixed;
-  z-index: 2000;
+  z-index: 1000;
   width: 100%;
   height: 100%;
   top: 0;
   right: 0;
-  background: #1a1b1f;
+  background: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   max-width: 35rem;
   min-width: 320px;
   transform: translateX(100%);
@@ -470,7 +540,6 @@ a {
   font-weight: 900;
   font-size: 1.8rem;
   line-height: 1.3333333333;
-  color: #ffffff;
 }
 .nav-mobile__links li a.active, .nav-mobile__links li a:hover {
   color: #fe9149;
@@ -512,12 +581,11 @@ a {
     font-size: 1.5rem;
   }
   .article ul {
-    padding-left: 0;
+    padding-left: 1.5rem;
   }
 }
 .promo {
   background: #000 url(../img/promo/1.jpeg) no-repeat 0 0/auto 100%;
-  height: 68.5rem;
   padding-top: 22.8rem;
   padding-bottom: 10rem;
 }
@@ -532,13 +600,24 @@ a {
   font-weight: 600;
   font-size: 2rem;
   line-height: 1.408;
-  text-align: justify;
   color: #ffffff;
 }
 .promo__btn-price {
   margin-top: 4.2rem;
 }
 
+@media (max-width: 999.98px) {
+  .promo {
+    padding: 16.2rem 2rem 9.2rem 2rem;
+  }
+  .promo__desc {
+    margin-top: 3.2rem;
+    font-size: 1.5rem;
+  }
+  .promo__btn-price {
+    margin-top: 5rem;
+  }
+}
 @media (max-width: 999.98px) {
   :root {
     --side-padding: 2rem;

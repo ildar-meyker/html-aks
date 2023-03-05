@@ -32,6 +32,8 @@
 
     &.active {
         i {
+            background: #ea5b0d;
+
             &:nth-child(1) {
                 transform: rotate(45deg);
             }
@@ -48,14 +50,13 @@
 .btn-arrow {
     @include reset-btn;
     display: inline-flex;
-    padding: 0.2rem 0.9rem;
+    padding: 0.2rem 1.5rem;
     border: 2px solid #f37335;
     align-items: center;
     font-family: inherit;
     font-weight: 800;
     font-size: 1.6rem;
     line-height: calc(24 / 16);
-    color: #f37335;
 
     .icon {
         margin-left: calc(10 / 14) + em;
@@ -68,11 +69,11 @@
 
 .btn-white {
     @include reset-btn;
-    min-width: 20.5rem;
+    min-width: calc(205 / 20) + em;
     border: 0.3rem solid #ffffff;
     box-shadow: 0px 0px 0.2rem rgba(0, 0, 0, 0.3);
-    border-radius: 1rem;
-    padding: 1.7rem 1rem;
+    border-radius: 0.5em;
+    padding: calc(14 / 20) + em calc(10 / 20) + em;
     font-family: inherit;
     font-style: normal;
     font-weight: 700;
@@ -89,6 +90,11 @@
 }
 
 @media (max-width: 999.98px) {
+    .btn-white {
+        min-width: calc(130 / 15) + em;
+        padding: calc(7 / 15) + em calc(10 / 15) + em;
+        font-size: 1.5rem;
+    }
 }
 
 @media (max-width: 499.98px) {

@@ -47,10 +47,40 @@
         line-height: calc(20 / 15);
         text-align: center;
     }
+
+    &__article {
+        display: none;
+    }
 }
 
 @media (max-width: 999.98px) {
     .goods {
+        padding-top: 3rem;
+        padding-bottom: 4.5rem;
+
+        &__list {
+            max-width: 28rem;
+        }
+
+        &__row {
+            margin-top: -4.2rem;
+        }
+
+        &__col {
+            width: 100%;
+            margin-top: 4.2rem;
+        }
+
+        &__h1 {
+            text-align: left;
+            padding: 0 1.2rem;
+        }
+
+        &__article {
+            display: block;
+            margin-bottom: 5.2rem;
+            padding: 0 1.2rem;
+        }
     }
 }
 

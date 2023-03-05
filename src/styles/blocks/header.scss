@@ -4,12 +4,17 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 2000;
     padding-top: 4.5rem;
 
     &.fixed {
         background: rgba(#000, 0.8);
         padding: 2rem 0;
+    }
+
+    &--no-bg {
+        transition: none;
+        background: transparent !important;
     }
 
     &__center {
@@ -23,6 +28,22 @@
 
 @media (max-width: 999.98px) {
     .header {
+        padding: 1rem 0;
+
+        &.fixed {
+            padding: 1rem 0;
+        }
+
+        &__center {
+            max-width: none;
+            display: flex;
+        }
+
+        &__btn-burger {
+            display: block;
+            margin-left: auto;
+            margin-right: -1rem;
+        }
     }
 }
 

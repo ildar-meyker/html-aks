@@ -1,5 +1,6 @@
 function open() {
     $("#nav-mobile, .js-nav-mobile-open").addClass("active");
+    $("#header").addClass("header--no-bg");
     $("body").addClass("page__locked");
 }
 
@@ -10,8 +11,8 @@ function toggle() {
 
 function close() {
     $("#nav-mobile, .js-nav-mobile-open").removeClass("active");
+    $("#header").removeClass("header--no-bg");
     $("body").removeClass("page__locked");
-    console.log(1);
 }
 
 $(function () {

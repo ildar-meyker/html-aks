@@ -1,12 +1,13 @@
 .nav-mobile {
     transition: all 0.2s;
     position: fixed;
-    z-index: 2000;
+    z-index: 1000;
     width: 100%;
     height: 100%;
     top: 0;
     right: 0;
-    background: #1a1b1f;
+    background: #fff;
+    box-shadow: 0 0 20px rgb(0 0 0 / 20%);
     max-width: 35rem;
     min-width: 320px;
     transform: translateX(100%);
@@ -26,7 +27,6 @@
                 font-weight: 900;
                 font-size: 1.8rem;
                 line-height: calc(24 / 18);
-                color: #ffffff;
 
                 &.active,
                 &:hover {
