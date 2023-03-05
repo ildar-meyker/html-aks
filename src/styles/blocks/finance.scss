@@ -3,37 +3,34 @@
     padding-bottom: 7.8rem;
     background: linear-gradient(90deg, #000000 0%, #434343 100%);
 
-    &__h1 {
-        margin-bottom: calc(52 / 35) + em;
-    }
-
     &__table {
         background: #ffffff;
         border-radius: 5.5rem;
         padding: 6.4rem 4rem 4rem 4rem;
         max-width: 100rem;
         margin: 0 auto;
+        margin-top: 5.2rem;
 
         table {
             width: 100%;
             max-width: 75.4rem;
             margin: 0 auto;
+        }
 
-            td {
-                border-bottom: 1px solid #eeeeee;
-                padding: 2.8rem;
-                padding-left: 0;
-                font-size: 2rem;
-                line-height: calc(24 / 20) + em;
+        td {
+            border-bottom: 1px solid #eeeeee;
+            padding: 2.8rem;
+            padding-left: 0;
+            font-size: 2rem;
+            line-height: calc(24 / 20) + em;
 
-                &:nth-child(1) {
-                    padding-left: 2.8rem;
-                    width: 45%;
-                    font-weight: 700;
-                    line-height: calc(32 / 20);
-                    text-transform: uppercase;
-                    color: #001c35;
-                }
+            &:nth-child(1) {
+                padding-left: 2.8rem;
+                width: 45%;
+                font-weight: 700;
+                line-height: calc(32 / 20);
+                text-transform: uppercase;
+                color: #001c35;
             }
         }
     }
@@ -41,6 +38,37 @@
 
 @media (max-width: 999.98px) {
     .finance {
+        &__table {
+            border-radius: 3.8rem;
+            padding: 3rem 3.7rem;
+
+            table,
+            tr,
+            td {
+                display: block;
+                width: 100% !important;
+            }
+
+            tr {
+                padding: 3.2rem 1rem;
+                border-bottom: 1px solid #c2c2c2;
+
+                &:last-child {
+                    border-bottom: 0;
+                }
+            }
+
+            td {
+                border-bottom: 0;
+                padding: 0 !important;
+                font-size: 1.8rem;
+                line-height: calc(22 / 18);
+
+                &:first-child {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
     }
 }
 
