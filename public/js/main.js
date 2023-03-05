@@ -45,6 +45,51 @@ sections.forEach(function (section) {
   observer.observe(section);
 });
 
+/***/ }),
+
+/***/ 283:
+/***/ (function(module, exports) {
+
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*! scrollbarWidth.js v0.1.3 | felixexter | MIT | https://github.com/felixexter/scrollbarWidth */
+(function (root, factory) {
+	if (true) {
+		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+		__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+		(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
+		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	} else {}
+}(this, function () {
+	'use strict';
+
+	function scrollbarWidth() {
+		if (typeof document === 'undefined') {
+			return 0
+		}
+
+		var
+			body = document.body,
+			box = document.createElement('div'),
+			boxStyle = box.style,
+			width;
+
+		boxStyle.position = 'absolute';
+		boxStyle.top = boxStyle.left = '-9999px';
+		boxStyle.width = boxStyle.height = '100px';
+		boxStyle.overflow = 'scroll';
+
+		body.appendChild(box);
+
+		width = box.offsetWidth - box.clientWidth;
+
+		body.removeChild(box);
+
+		return width;
+	}
+
+	return scrollbarWidth;
+}));
+
+
 /***/ })
 
 /******/ 	});
@@ -67,7 +112,7 @@ sections.forEach(function (section) {
 /******/ 		};
 /******/ 	
 /******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 		__webpack_modules__[moduleId].call(module.exports, module, module.exports, __webpack_require__);
 /******/ 	
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
@@ -80,10 +125,14 @@ var __webpack_exports__ = {};
 "use strict";
 
 ;// CONCATENATED MODULE: ./src/js/modules/navMobile.js
+var scrollbarWidth = __webpack_require__(283);
+
 function navMobile_open() {
   $("#nav-mobile, .js-nav-mobile-open").addClass("active");
   $("#header").addClass("header--no-bg");
-  $("body").addClass("page__locked");
+  $("body").addClass("page__locked").css({
+    "margin-right": scrollbarWidth()
+  });
 }
 
 function toggle() {
@@ -94,7 +143,9 @@ function toggle() {
 function navMobile_close() {
   $("#nav-mobile, .js-nav-mobile-open").removeClass("active");
   $("#header").removeClass("header--no-bg");
-  $("body").removeClass("page__locked");
+  $("body").removeClass("page__locked").css({
+    "margin-right": 0
+  });
 }
 
 $(function () {

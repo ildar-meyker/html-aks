@@ -1,7 +1,11 @@
+const scrollbarWidth = require("scrollbarwidth");
+
 function open() {
     $("#nav-mobile, .js-nav-mobile-open").addClass("active");
     $("#header").addClass("header--no-bg");
-    $("body").addClass("page__locked");
+    $("body").addClass("page__locked").css({
+        "margin-right": scrollbarWidth(),
+    });
 }
 
 function toggle() {
@@ -12,7 +16,9 @@ function toggle() {
 function close() {
     $("#nav-mobile, .js-nav-mobile-open").removeClass("active");
     $("#header").removeClass("header--no-bg");
-    $("body").removeClass("page__locked");
+    $("body").removeClass("page__locked").css({
+        "margin-right": 0,
+    });
 }
 
 $(function () {
