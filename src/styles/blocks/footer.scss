@@ -1,8 +1,6 @@
 .footer {
     padding-top: 6rem;
     padding-bottom: 5rem;
-    font-family: "Mont";
-    font-style: normal;
     font-weight: 900;
     font-size: 2rem;
     line-height: calc(26 / 20) + em;
@@ -11,6 +9,11 @@
 
 @media (max-width: 999.98px) {
     .footer {
+        padding-top: 2.6rem;
+        padding-bottom: 2.1rem;
+        font-weight: 800;
+        font-size: 1.5rem;
+        line-height: calc(19 / 15);
     }
 }
 
